@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ja" data-pal="1">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AKB48劇場公演 出演日ガイド</title>
+<meta name="description" content="メンバーを選ぶだけで、その月の出演公演・開演時間・生誕祭がカレンダーで一目でわかる、AKB48劇場公演の非公式ガイド。名前・あだ名・読みで検索、複数メンバーの同時チェックもできます。">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="AKB48劇場公演 出演日ガイド">
+<meta property="og:description" content="メンバーを選ぶだけで、その月の出演公演・開演時間・生誕祭が一目でわかる非公式ガイド。">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="AKB48劇場公演 出演日ガイド">
+<meta name="twitter:description" content="メンバーを選ぶだけで、その月の出演公演・開演時間・生誕祭が一目でわかる非公式ガイド。">
+<!-- 公開URLが決まったら次を追加: <link rel="canonical" href="https://（公開URL）/"> と og:url, og:image -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500;600&family=Zen+Maru+Gothic:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff;--card:#fafcfe;--tx:#2e3a4a;--sub:#7b8794;--ac:#3d5a80;--ac2:#dfecf8;--bd:#dce3ea;--sel:#f0c8d8;--selt:#5a2a3c;--hb:#e6e0f3;--ht:#4a3a78;--wb:#e3efdc;--wt:#3f6a32;--bday:#b0305a}
+:root[data-pal="2"]{--bg:#f6efe8;--card:#fbf8f4;--tx:#4a3f38;--sub:#8c7d72;--ac:#7d5f4c;--ac2:#e8dcd2;--bd:#d9cfc5;--sel:#d0bcad;--selt:#3d322b;--hb:#d8dccd;--ht:#44503a;--wb:#e8c9c3;--wt:#7a3f37;--bday:#9a4a3a}
+:root[data-pal="3"]{--bg:#fdf1ea;--card:#fffaf7;--tx:#4a3a40;--sub:#8f7a82;--ac:#9a6a78;--ac2:#fae0d6;--bd:#efd9d3;--sel:#f7cbd4;--selt:#4a2a34;--hb:#d8e2da;--ht:#3f5a49;--wb:#e3d6e8;--wt:#5b3f6b;--bday:#b8506a}
+:root[data-pal="4"]{--bg:#fff3f6;--card:#fff;--tx:#4a2a35;--sub:#9a6b7a;--ac:#c04a72;--ac2:#fce4ea;--bd:#f7c4d1;--sel:#f4b3c5;--selt:#4a1f2e;--hb:#e3d4f0;--ht:#5a3a78;--wb:#d6ecdc;--wt:#2f6a48;--bday:#c04a72}
+:root[data-pal="5"]{--bg:#212529;--card:#2b3035;--tx:#e9ecef;--sub:#adb5bd;--ac:#ced4da;--ac2:#343a40;--bd:#495057;--sel:#6c757d;--selt:#fff;--hb:#495057;--ht:#dee2e6;--wb:#adb5bd;--wt:#212529;--bday:#f2a3b8;color-scheme:dark}
+:root[data-pal="6"]{--bg:#fbf3f8;--card:#fff;--tx:#3d3550;--sub:#857b99;--ac:#d6639a;--ac2:#fbe0ec;--bd:#ecd2e2;--sel:#f2b0cd;--selt:#4a1f3a;--hb:#c4dffc;--ht:#284a73;--wb:#c9b6d9;--wt:#3d2d52;--bday:#c04a80}
+:root[data-pal="7"]{--bg:#f1f7fe;--card:#fff;--tx:#2f3f55;--sub:#73869e;--ac:#3f87d6;--ac2:#dcecfc;--bd:#cfe2f6;--sel:#c9b6d9;--selt:#3d2d52;--hb:#f6c8dd;--ht:#6a2c4a;--wb:#d6ecdc;--wt:#2f6a48;--bday:#3f87d6}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:"Noto Sans JP","Hiragino Sans",Meiryo,sans-serif;line-height:1.6;font-size:14px}
+.wrap{max-width:900px;margin:0 auto;padding:12px 16px 32px}
+h1,h2,h3,.yr b,.mb b,.tt{font-family:"Noto Serif JP","Hiragino Mincho ProN",serif;font-weight:500}
+.top{background:var(--ac2);padding:28px 24px;display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap}
+.top h1{margin:0;font-size:1.7rem;color:var(--ac)}
+.top p{margin:6px 0 0;font-size:.75rem;color:var(--sub)}
+.yr{text-align:right}.yr b{display:block;font-size:2.2rem;color:var(--ac);line-height:1}.yr small{font-size:.65rem;color:var(--sub)}
+section{margin-top:36px}
+h2{font-size:1.15rem;margin:0 0 14px;display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+h2 i{font-style:normal;font-size:.7rem;color:var(--ac);font-family:"Noto Sans JP",sans-serif}
+h2 small{font-size:.7rem;color:var(--sub);font-family:"Noto Sans JP",sans-serif}
+.sb{display:flex;align-items:center;gap:8px;border:1px solid var(--ac);padding:0 12px;background:var(--card);color:var(--sub)}
+.sb input{flex:1;min-width:0;border:0;outline:0;background:none;padding:12px 0;font-size:.9rem;color:var(--tx);font-family:inherit}
+#gens{margin-top:12px;max-height:340px;overflow-y:auto;border-bottom:1px solid var(--bd);padding-right:4px}
+.gr{display:flex;gap:14px;padding:10px 0;border-top:1px solid var(--bd);align-items:flex-start}
+.gl{width:6.5em;flex:none;font-size:.7rem;color:var(--ac);font-weight:700;padding-top:7px}
+.ch{display:flex;flex-wrap:wrap;gap:8px}
+.chip{border:1px solid var(--bd);background:var(--card);color:var(--tx);border-radius:99px;padding:5px 14px;font-size:.78rem;cursor:pointer;font-family:inherit}
+.chip.on{background:var(--sel);color:var(--selt);font-weight:700;border-color:var(--selt)}
+.mbar{display:grid;grid-template-columns:auto 1fr 1fr 1fr;gap:8px;align-items:center;margin-bottom:16px}
+.ml{font-size:.7rem;color:var(--sub)}
+.mb{border:1px solid var(--bd);background:var(--card);padding:8px;font-family:inherit;color:var(--tx);cursor:pointer;display:flex;gap:6px;align-items:baseline;justify-content:center}
+.mb b{font-size:1rem}.mb small{font-size:.65rem;color:var(--sub)}
+.mb.on{background:var(--sel);color:var(--selt);border-color:var(--sel)}.mb.on small{color:var(--selt)}
+.mb:disabled{opacity:.55;cursor:default}
+.tb{border:1px solid var(--bd)}
+.th,.tr{display:grid;grid-template-columns:1.2fr 2fr 1fr 2fr;gap:8px;padding:12px 14px;align-items:center}
+.th{background:var(--ac2);font-size:.7rem;color:var(--ac)}
+.tr{border-top:1px solid var(--bd);background:var(--card);cursor:pointer;font-size:.82rem}
+.tr .b{font-weight:700}
+.tr.on{background:var(--sel);color:var(--selt)}
+.tr.out{color:var(--sub)}
+.pill{display:inline-block;border-radius:99px;padding:2px 10px;font-size:.7rem;background:var(--ac2);color:var(--ac);margin-right:4px}
+.pill.b{background:var(--sel);color:var(--selt)}.pill.w{background:var(--wb);color:var(--wt)}.pill.h{background:var(--hb);color:var(--ht)}.pill.o{background:var(--bd);color:var(--sub)}
+.cal{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));border-left:1px solid var(--bd);border-top:1px solid var(--bd)}
+.wh{background:#cfe6fa;color:#2f5a85;font-size:.7rem;padding:8px 10px;border-right:1px solid var(--bd);border-bottom:1px solid var(--bd)}
+.c{min-height:96px;border:0;border-right:1px solid var(--bd);border-bottom:1px solid var(--bd);background:var(--card);padding:8px;text-align:left;font-family:inherit;color:var(--tx);cursor:pointer;position:relative;display:flex;flex-direction:column;gap:2px;min-width:0;overflow:hidden;font-size:.62rem}
+.c.e{cursor:default}
+.c .n{font-size:.8rem;color:var(--tx);align-self:flex-start;font-weight:300;font-family:"Helvetica Neue",Arial,"Noto Sans JP",sans-serif;letter-spacing:.02em;line-height:1.5}
+.c .n.today{background:#e8789f;color:#fff;border-radius:99px;min-width:1.8em;height:1.8em;display:inline-flex;align-items:center;justify-content:center}
+.bar{display:block;background:var(--c);color:#4a4a55;border-radius:99px;padding:1px 8px;font-size:.6rem;line-height:1.6;margin-top:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.c em{position:absolute;top:8px;right:8px;font-style:normal;font-size:.55rem;color:var(--ac)}
+.c.hit{background:#e9f4fd}
+.c.sel{box-shadow:inset 0 0 0 3px var(--ac)}
+.dp2{border:1px solid var(--bd);margin-top:16px;padding:16px 20px;background:var(--card);display:flex;flex-direction:column;gap:6px}
+.dp2{gap:10px}.dp2 h3{margin:0;font-size:1.4rem;font-family:"Noto Serif JP",serif;font-weight:600;color:var(--tx);display:flex;align-items:center;gap:10px;flex-wrap:wrap}.d1{align-self:flex-start;background:var(--ac2);color:var(--ac);font-weight:700;font-size:.9rem;padding:3px 14px;border-radius:99px}.d3{align-self:flex-start;background:var(--ac);color:#fff;font-size:1.15rem;font-weight:700;padding:2px 16px;border-radius:4px;letter-spacing:.04em}.d3 small{font-size:.7rem;font-weight:400;margin-left:4px}.d4{font-size:.85rem;line-height:1.8;border-left:3px solid var(--ac);padding-left:12px;margin-top:4px}.d4 b{color:var(--ac)}
+.c.sel em{color:var(--selt)}
+.s{display:flex;align-items:center;flex-wrap:wrap;gap:4px;margin-top:4px;font-weight:500}
+.k{display:inline-flex;width:14px;height:14px;border-radius:3px;background:var(--c);align-items:center;justify-content:center;font-size:.55rem;flex:none}
+.tm{color:var(--sub)}
+.nt{font-size:.58rem}.nt.b{color:var(--bday)}.nt.w{color:var(--wt)}
+.cl{color:var(--sub);margin-top:4px}
+.dp{display:grid;grid-template-columns:230px 1fr;border:1px solid var(--bd);margin-top:16px}
+.dl{background:var(--ac2);padding:22px 20px;display:flex;flex-direction:column;gap:6px;align-items:flex-start}
+.dl small{font-size:.7rem;color:var(--sub)}
+.dl h3{margin:6px 0 0;font-size:1.25rem}
+.tt{font-size:1.6rem}.tt small{font-size:.7rem;font-family:"Noto Sans JP",sans-serif}
+.dm{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:0 24px;padding:18px 20px;align-content:start;background:var(--card)}
+.dm span{padding:9px 0 7px;border-bottom:1px solid var(--bd);font-size:.8rem}
+.dm .me{color:var(--ac);font-weight:700;text-decoration:underline}
+.cg{border:1px solid var(--bd);margin-top:16px;padding:18px 20px;background:var(--card);font-size:.75rem}
+.cg b{font-size:.8rem}.cg p{margin:6px 0 0;color:var(--sub)}
+.hint{color:var(--sub);font-size:.82rem;margin:8px 0}
+footer{margin-top:40px;padding:16px;border-top:1px solid var(--bd);text-align:center;color:var(--sub);font-size:.7rem}
+footer a{color:var(--ac)}
+.pals{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:6px}
+.pal{width:46px;height:28px;border-radius:99px;border:2px solid transparent;display:flex;overflow:hidden;padding:0;cursor:pointer;background:none}
+.pal i{flex:1}.pal.on{border-color:var(--ac)}
+@media(max-width:620px){.top{padding:20px 16px}.top h1{font-size:1.3rem}.yr b{font-size:1.6rem}.th{display:none}.tr{grid-template-columns:1fr 1fr;row-gap:2px}.dp{grid-template-columns:1fr}.dm{grid-template-columns:repeat(2,1fr)}.c{padding:4px;min-height:72px}.c .n{font-size:.78rem}.c em{display:none}.wh{padding:6px 4px;text-align:center}.gr{flex-direction:column;gap:4px}.gl{padding-top:0}.mbar{grid-template-columns:repeat(3,1fr)}.ml{grid-column:1/-1}}
+.calhd{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+.ct{font-weight:900;font-size:2.4rem;color:var(--ac);line-height:1.1}
+.ct small{font-size:1.3rem;font-weight:900;margin-left:2px}.ct .sl{font-weight:300;margin:0 12px}.ct .en{font-size:1.7rem;font-weight:900;letter-spacing:.02em}
+.mnav{display:flex;gap:8px}
+.mn{border:2px solid var(--bd);background:var(--card);color:var(--tx);border-radius:10px;padding:9px 16px;font-family:inherit;font-size:.9rem;cursor:pointer;white-space:nowrap}
+.mn.on{background:var(--ac);color:#fff;border-color:var(--ac);font-weight:700}
+.mn:disabled{color:#b5bdc7;background:#fafbfc;border-color:#e8edf1;cursor:default}
+@media(max-width:620px){.ct{font-size:1.8rem}.ct .en{font-size:1.2rem}.mn{padding:8px 10px;font-size:.8rem}}
+.dp2{border:0;background:none;padding:16px 0 0;margin-top:16px;border-top:1px solid var(--bd);gap:8px}
+.dp2 h3{font-size:1.2rem}
+.d1{background:none;padding:0;border-radius:0;font-size:.85rem;color:var(--sub);font-weight:400}
+.d3{background:none;color:var(--tx);padding:0;border-radius:0;font-size:1rem}
+.d4{font-size:.85rem;border-left-width:2px}
+.dp2 .cg{border:0;border-top:1px solid var(--bd);background:none}
+.th{background:var(--ac2);color:var(--ac)}
+.tr.on{background:var(--sel);color:var(--selt)}
+.d1 .d3{margin-left:12px;color:var(--tx);font-size:.95rem}
+.d1 .d3{color:inherit;font-weight:400;font-size:1em}
+#rt,#rt small{color:#e0608f}
+#rt small{font-size:1rem;margin-left:18px;color:#f0a8c2}
+.top h1,h2{font-family:"Zen Maru Gothic","Noto Sans JP",sans-serif;font-weight:700}
+.d3,.d3 small{font-weight:400}
+.dp2{border-left:3px solid var(--ac);padding-left:14px}
+.d4{border-left:0;padding-left:0}
+.ct{color:#7c9ec9}
+.mn.on{background:#bcd6f3;color:#2f5a85;border-color:#bcd6f3}
+.wrap section:nth-of-type(1) h2{color:#3d5a80}
+.dp2 h3{font-family:"Zen Maru Gothic","Noto Sans JP",sans-serif;font-weight:700}
+.d4 b{color:inherit}
+.dp2{border-left-width:6px}
+.cg,.cg b,.cg p{color:#3d5a80}
+#gens{overscroll-behavior-y:auto;touch-action:pan-y;-webkit-overflow-scrolling:touch}
+@media(max-width:620px){
+#gens{max-height:200px}
+.c{padding:3px 2px;min-height:84px}
+.c .n{font-size:.72rem;padding-left:2px}
+.bar{white-space:normal;overflow:visible;text-overflow:clip;border-radius:6px;padding:2px 3px;font-size:.5rem;line-height:1.3;margin-top:3px;word-break:break-all;text-align:center}
+.bn,.bt{display:block}
+.bn{font-weight:700}
+.calhd{margin-bottom:10px}
+}
+.rowdet{padding:14px 18px;background:var(--card);border-top:1px solid var(--bd)}
+.rowdet .dp2{margin:0;padding-top:0;border-top:0}
+.tr{cursor:pointer}
+.pc{display:flex;flex-direction:column;gap:6px;align-items:flex-start}.pr{display:flex;flex-wrap:wrap;gap:4px}.pr .pill{margin:0}.pill.m{background:#e3f0fb;color:#2f5a85}.pill.n{background:#fff1cf;color:#7a5410}
+.bar{display:flex;flex-wrap:wrap;column-gap:4px;justify-content:center;white-space:normal;overflow:visible;text-overflow:clip;border-radius:10px;padding:2px 8px;line-height:1.4}.bt{white-space:nowrap}.bn{word-break:keep-all}@media(min-width:621px){.bn{white-space:nowrap}}
+.clr{margin-left:14px;border:1px solid var(--bd);background:var(--card);color:var(--sub);border-radius:99px;padding:3px 12px;font-size:.7rem;font-family:"Noto Sans JP",sans-serif;font-weight:400;cursor:pointer}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+<div><h1>🎀 AKB48劇場公演 出演日ガイド 🎀</h1><p>推しの出演日が一目でわかる</p></div>
+
+</header>
+
+<section>
+<h2>メンバーを選択して、その月の出演公演を表示</h2>
+<label class="sb"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><input type="search" id="kw" placeholder="名前で絞り込み（例：倉野尾、なるみ、なるちゃん）" autocomplete="off"></label>
+<div id="gens"></div>
+</section>
+
+<section>
+<div class="calhd"><h2 style="margin:0"><span id="rt"></span></h2><div class="mnav" id="months2"></div></div>
+<div id="res"></div>
+</section>
+
+<section style="margin-top:72px">
+<div class="calhd"><div class="ct" id="ttl"></div><div class="mnav" id="months"></div></div>
+<div class="cal" id="cal"></div>
+<div id="det"></div>
+</section>
+
+<footer>
+
+<p>出典：<a href="https://www.akb48.co.jp/theater">AKB48公式サイト</a>「公演スケジュール更新のお知らせ」（10月分：2026.09.19、11月分：2026.10.18）と、各公演のご案内・出演メンバー変更のお知らせ（2026.10.27時点）より作成。非公式のまとめサイトです。<br>演目・出演メンバー・開演時間は予告なく変更される場合があります。最新情報は公式サイトでご確認ください。</p>
+</footer>
+</div>
+
+<script>
+const T={R:"ＲＥＳＥＴ",K:"ここからだ",Y:"夢のポップスター",H:"手をつなぎながら",M:"そこに未来はある",N:"M.T.に捧ぐ",P:"柱の会限定イベント"};
+// [日, 演目, 開演, 備考, 出演]
+const D=[
+[1,"R","13:00／17:30","","太田有紀・工藤華純・髙橋彩音・千葉恵里・橋本陽菜・平田侑希・布袋百椛・丸山ひなた"],
+[2,"K","18:30","長友彩海 生誕祭","奥本カイリ・小栗有以・行天優莉奈・工藤華純・倉野尾成美・黒須遥香・徳永羚海・長友彩海・成田香姫奈・平田侑希・水島美結・武藤小麟・山内瑞葵・山根涼羽・大賀彩姫・丸山ひなた"],
+[3,"K","13:00／17:30","","秋山由奈・新井彩永・太田有紀・久保姫菜乃・坂川陽香・下尾みう・千葉恵里・永野芹佳・橋本恵理子・畠山希美・正鋳真優・近藤沙樹・髙橋舞桜・田中沙友利・森川優・渡邉葵心"],
+[4,"Y","19:00","","秋山由奈・工藤華純・倉野尾成美・迫由芽実・下尾みう・福岡聖菜・山内瑞葵・田中沙友利"],
+[5,"K","18:30","","岩立沙穂・奥本カイリ・迫由芽実・髙橋彩音・徳永羚海・長友彩海・平田侑希・福岡聖菜・布袋百椛・正鋳真優・山内瑞葵・山口結愛・山根涼羽・大賀彩姫・丸山ひなた・渡邉葵心"],
+[6,"H","18:30","","岩立沙穂・奥本カイリ・大賀彩姫・近藤沙樹・丸山ひなた・田中沙友利・牧戸愛茉・渡邉葵心"],
+[7,"R","12:30","","工藤華純・黒須遥香・徳永羚海・永野芹佳・福岡聖菜・武藤小麟・山口結愛・森川優"],
+[8,"K","13:00／17:30","17:30は女性限定公演","岩立沙穂・奥本カイリ・川村結衣・工藤華純・下尾みう・長友彩海・成田香姫奈・橋本恵理子・橋本陽菜・平田侑希・正鋳真優・八木愛月・山根涼羽・大賀彩姫・田中沙友利・森川優"],
+[9,"K","18:30","","伊藤百花・小栗有以・行天優莉奈・坂川陽香・佐藤綺星・千葉恵里・徳永羚海・永野芹佳・橋本陽菜・畠山希美・布袋百椛・正鋳真優・水島美結・武藤小麟・近藤沙樹・髙橋舞桜"],
+[10,"Y","18:30","倉野尾成美 生誕祭","新井彩永・久保姫菜乃・倉野尾成美・迫由芽実・髙橋彩音・山内瑞葵・山口結愛・山﨑空"],
+[11,"R","19:00","","太田有紀・行天優莉奈・黒須遥香・下尾みう・髙橋彩音・正鋳真優・山根涼羽・丸山ひなた"],
+[12,"M","18:30","水島美結 生誕祭","秋山由奈・太田有紀・川村結衣・工藤華純・久保姫菜乃・迫由芽実・佐藤綺星・橋本恵理子・畠山希美・平田侑希・布袋百椛・正鋳真優・水島美結・八木愛月・山口結愛・山﨑空"],
+[13,"Y","18:30","","伊藤百花・奥本カイリ・小栗有以・倉野尾成美・黒須遥香・佐藤綺星・髙橋彩音・近藤沙樹"],
+[14,"Y","13:00／17:30","","秋山由奈・太田有紀・工藤華純・迫由芽実・下尾みう・成田香姫奈・福岡聖菜・正鋳真優"],
+[15,"P","14:00","14:00の部（申込受付は終了）","秋山由奈・新井彩永・小栗有以・行天優莉奈・工藤華純・倉野尾成美・迫由芽実・佐藤綺星・下尾みう・永野芹佳・畠山希美・山口結愛・山根涼羽・大賀彩姫・近藤沙樹・渡邉葵心"],
+[15,"P","19:00","19:00の部（申込受付は終了）","伊藤百花・太田有紀・奥本カイリ・川村結衣・久保姫菜乃・黒須遥香・坂川陽香・髙橋彩音・長友彩海・成田香姫奈・平田侑希・布袋百椛・八木愛月・山内瑞葵・丸山ひなた・森川優"],
+[16,"R","18:30","","岩立沙穂・久保姫菜乃・橋本恵理子・橋本陽菜・畠山希美・平田侑希・武藤小麟・山口結愛"],
+[17,"R","18:30","千葉恵里 生誕祭","秋山由奈・黒須遥香・迫由芽実・千葉恵里・徳永羚海・八木愛月・山内瑞葵・山根涼羽"],
+[18,"R","19:00","","新井彩永・行天優莉奈・黒須遥香・永野芹佳・橋本恵理子・水島美結・山根涼羽・大賀彩姫"],
+[19,0],
+[20,"K","18:30","","秋山由奈・太田有紀・川村結衣・工藤華純・倉野尾成美・迫由芽実・佐藤綺星・髙橋彩音・徳永羚海・永野芹佳・橋本陽菜・平田侑希・正鋳真優・水島美結・山内瑞葵・山口結愛"],
+[21,0],[22,0],
+[23,"H","13:00／17:30","","奥本カイリ・正鋳真優・大賀彩姫・丸山ひなた・髙橋舞桜・田中沙友利・森川優・渡邉葵心"],
+[24,0],[25,0],
+[26,"H","18:30","","奥本カイリ・正鋳真優・大賀彩姫・丸山ひなた・髙橋舞桜・田中沙友利・森川優・渡邉葵心"],
+[27,"R","18:30","","太田有紀・黒須遥香・橋本陽菜・平田侑希・水島美結・武藤小麟・山口結愛・山根涼羽"],
+[28,"R","14:00","","岩立沙穂・久保姫菜乃・迫由芽実・橋本陽菜・布袋百椛・正鋳真優・丸山ひなた・森川優"],
+[29,"N","18:30","初日","秋山由奈・新井彩永・伊藤百花・小栗有以・行天優莉奈・倉野尾成美・坂川陽香・佐藤綺星・下尾みう・長友彩海・成田香姫奈・福岡聖菜・八木愛月・山内瑞葵・山﨑空・近藤沙樹"],
+[30,"H","18:30","","奥本カイリ・黒須遥香・迫由芽実・正鋳真優・丸山ひなた・髙橋舞桜・田中沙友利・森川優"]
+];
+const D10=[
+[1,"R","18:30","","黒須遥香・下尾みう・髙橋彩音・永野芹佳・福岡聖菜・水島美結・武藤小麟・山根涼羽"],
+[2,"K","18:30","","岩立沙穂・太田有紀・川村結衣・工藤華純・倉野尾成美・黒須遥香・千葉恵里・徳永羚海・永野芹佳・成田香姫奈・橋本恵理子・橋本陽菜・畠山希美・平田侑希・水島美結・森川優"],
+[3,"R","13:00／17:30","","太田有紀・行天優莉奈・坂川陽香・下尾みう・橋本陽菜・正鋳真優・山内瑞葵・丸山ひなた"],
+[4,0],
+[5,"R","18:30","","迫由芽実・千葉恵里・長友彩海・成田香姫奈・畠山希美・福岡聖菜・大賀彩姫・近藤沙樹"],
+[6,"Y","18:30","新井彩永 生誕祭","新井彩永・太田有紀・久保姫菜乃・倉野尾成美・迫由芽実・正鋳真優・山口結愛・近藤沙樹"],
+[7,"R","19:00","","川村結衣・迫由芽実・永野芹佳・福岡聖菜・武藤小麟・山口結愛・山根涼羽・丸山ひなた",["平田侑希・水島美結","迫由芽実・丸山ひなた"]],
+[8,"K","18:30","徳永羚海 生誕祭","川村結衣・工藤華純・久保姫菜乃・黒須遥香・髙橋彩音・千葉恵里・徳永羚海・長友彩海・永野芹佳・福岡聖菜・布袋百椛・正鋳真優・武藤小麟・山内瑞葵・山根涼羽・大賀彩姫",["坂川陽香・成田香姫奈・平田侑希","川村結衣・福岡聖菜・大賀彩姫"]],
+[9,"Y","18:30","成田香姫奈は一部出演（体調不良）","秋山由奈・奥本カイリ・工藤華純・黒須遥香・成田香姫奈・福岡聖菜・山内瑞葵・田中沙友利"],
+[10,"R","13:00／17:30","","岩立沙穂・太田有紀・徳永羚海・橋本恵理子・橋本陽菜・布袋百椛・正鋳真優・森川優"],
+[11,"R","13:00／17:30","17:30は女性限定公演","秋山由奈・太田有紀・佐藤綺星・下尾みう・畠山希美・福岡聖菜・八木愛月・山内瑞葵",["成田香姫奈","太田有紀"]],
+[12,"H","13:00／17:30","","奥本カイリ・川村結衣・黒須遥香・大賀彩姫・近藤沙樹・丸山ひなた・田中沙友利・牧戸愛茉"],
+[13,"K","18:30","","秋山由奈・新井彩永・行天優莉奈・工藤華純・坂川陽香・迫由芽実・下尾みう・髙橋彩音・長友彩海・畠山希美・布袋百椛・正鋳真優・水島美結・山口結愛・大賀彩姫・丸山ひなた"],
+[14,"H","19:00","","伊藤百花・奥本カイリ・迫由芽実・近藤沙樹・髙橋舞桜・田中沙友利・森川優・渡邉葵心"],
+[15,"Y","18:30","成田香姫奈は一部出演（体調不良）","太田有紀・坂川陽香・佐藤綺星・下尾みう・成田香姫奈・福岡聖菜・山内瑞葵・近藤沙樹・倉野尾成美",["","倉野尾成美"]],
+[16,"K","18:30","","秋山由奈・川村結衣・行天優莉奈・工藤華純・倉野尾成美・黒須遥香・佐藤綺星・永野芹佳・橋本恵理子・橋本陽菜・布袋百椛・武藤小麟・八木愛月・山根涼羽・大賀彩姫・田中沙友利"],
+[17,"R","13:00／17:30","","久保姫菜乃・徳永羚海・長友彩海・永野芹佳・橋本恵理子・平田侑希・水島美結・八木愛月"],
+[18,"R","13:00／17:30","","新井彩永・坂川陽香・畠山希美・千葉恵里・長友彩海・武藤小麟・山口結愛・山根涼羽"],
+[19,"K","18:30","坂川陽香 生誕祭","新井彩永・奥本カイリ・小栗有以・行天優莉奈・久保姫菜乃・坂川陽香・迫由芽実・佐藤綺星・徳永羚海・永野芹佳・平田侑希・正鋳真優・水島美結・山口結愛・山根涼羽・丸山ひなた"],
+[20,"R","18:30","","岩立沙穂・行天優莉奈・久保姫菜乃・迫由芽実・永野芹佳・橋本陽菜・福岡聖菜・森川優"],
+[21,"H","18:30","","奥本カイリ・大賀彩姫・近藤沙樹・丸山ひなた・髙橋舞桜・田中沙友利・牧戸愛茉・渡邉葵心"],
+[22,0],
+[23,"R","18:30","","新井彩永・川村結衣・工藤華純・佐藤綺星・永野芹佳・畠山希美・八木愛月・大賀彩姫"],
+[24,"R","13:00／17:30","","太田有紀・坂川陽香・佐藤綺星・下尾みう・畠山希美・福岡聖菜・武藤小麟・森川優"],
+[25,"H","13:00／17:30","","奥本カイリ・大賀彩姫・近藤沙樹・髙橋舞桜・田中沙友利・牧戸愛茉・森川優・渡邉葵心"],
+[26,"R","18:30","岩立沙穂 生誕祭","岩立沙穂・黒須遥香・髙橋彩音・橋本陽菜・福岡聖菜・布袋百椛・正鋳真優・水島美結"],
+[27,"K","18:30","","秋山由奈・新井彩永・太田有紀・倉野尾成美・佐藤綺星・下尾みう・髙橋彩音・永野芹佳・平田侑希・正鋳真優・八木愛月・山内瑞葵・丸山ひなた・牧戸愛茉・森川優・渡邉葵心"],
+[28,0],
+[29,"K","18:30","","奥本カイリ・小栗有以・川村結衣・行天優莉奈・工藤華純・倉野尾成美・坂川陽香・徳永羚海・長友彩海・永野芹佳・橋本陽菜・福岡聖菜・布袋百椛・武藤小麟・山根涼羽・近藤沙樹"],
+[30,"R","18:30","","新井彩永・太田有紀・工藤華純・佐藤綺星・千葉恵里・畠山希美・八木愛月・山内瑞葵"],
+[31,"Y","17:30","","秋山由奈・伊藤百花・小栗有以・倉野尾成美・坂川陽香・髙橋彩音・山口結愛・山﨑空"]
+];
+const W=["日","月","火","水","木","金","土"];
+const wd=d=>new Date(2026,mon-1,d).getDay();
+const esc=s=>s.replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+const members=[...new Set([...D10,...D].filter(x=>x[1]).flatMap(x=>x[4].split("・")))].sort((a,b)=>a.localeCompare(b,"ja"));
+const SH={R:"RESET",K:"ここからだ",Y:"夢ポプ",H:"手つな",M:"そこ未来",N:"M.T.",P:"柱の会<wbr>イベント"};
+const MON={10:D10,11:D};
+const GEN=[["13期生","岩立沙穂"],["15期生","福岡聖菜"],["Team8","小栗有以・行天優莉奈・倉野尾成美・坂川陽香・下尾みう・髙橋彩音・徳永羚海・永野芹佳・橋本陽菜"],["ドラフト2期生","千葉恵里"],["16期生","黒須遥香・長友彩海・武藤小麟・山内瑞葵・山根涼羽"],["17期生","太田有紀・佐藤綺星・橋本恵理子・畠山希美・平田侑希・布袋百椛・正鋳真優・水島美結・山﨑空"],["18期生","秋山由奈・新井彩永・工藤華純・久保姫菜乃・迫由芽実・成田香姫奈・八木愛月・山口結愛"],["19期生","伊藤百花・奥本カイリ・川村結衣"],["20期研究生","大賀彩姫・近藤沙樹・丸山ひなた"],["21期研究生","髙橋舞桜・田中沙友利・牧戸愛茉・森川優・渡邉葵心"],["22期研究生","大西ゆな・長谷川百々花・前田衣澄・山内利乃明"]];
+const CL={R:"#c9e4a8",K:"#f9cfdf",Y:"#c3e1fa",H:"#fbd7a3",M:"#f7f2a8",N:"#b5c0e6",P:"#d0c6ec"};
+const TX={K:"#4a3340",Y:"#1f3a55",M:"#4a4410"};
+const RD={"岩立沙穂":"いわたてさほ","福岡聖菜":"ふくおかせいな","小栗有以":"おぐりゆい","行天優莉奈":"ぎょうてんゆりな","倉野尾成美":"くらのおなるみ","坂川陽香":"さかがわひゆか","下尾みう":"したおみう","髙橋彩音":"たかはしあやね","徳永羚海":"とくながれみ","永野芹佳":"ながのせりか","橋本陽菜":"はしもとはるな","千葉恵里":"ちばえりい","黒須遥香":"くろすはるか","長友彩海":"ながともあやみ","武藤小麟":"むとうおりん","山内瑞葵":"やまうちみずき","山根涼羽":"やまねすずは","太田有紀":"おおたゆき","佐藤綺星":"さとうあいり","橋本恵理子":"はしもとえりこ","畠山希美":"はたけやまのぞみ","平田侑希":"ひらたゆき","布袋百椛":"ほていもか","正鋳真優":"まさいまゆう","水島美結":"みずしまみゆう","山﨑空":"やまざきそら","秋山由奈":"あきやまゆな","新井彩永":"あらいさえ","工藤華純":"くどうかすみ","久保姫菜乃":"くぼひなの","迫由芽実":"さこゆめみ","成田香姫奈":"なりたこひな","八木愛月":"やぎあづき","山口結愛":"やまぐちゆい","伊藤百花":"いとうももか","奥本カイリ":"おくもとかいり","川村結衣":"かわむらゆい","大賀彩姫":"おおがさき","近藤沙樹":"こんどうさき","丸山ひなた":"まるやまひなた","髙橋舞桜":"たかはしまお","田中沙友利":"たなかさゆり","牧戸愛茉":"まきとえま","森川優":"もりかわゆう","渡邉葵心":"わたなべきこ","大西ゆな":"おおにしゆな","長谷川百々花":"はせがわももか","前田衣澄":"まえだいずみ","山内利乃明":"やまうちりのあ"};
+const NK={"岩立沙穂":["さっほー"],"福岡聖菜":["せいちゃん"],"小栗有以":["ゆいゆい","2万年ちゃん","2万年に1人の美少女"],"行天優莉奈":["ゆりな","てんてん"],"倉野尾成美":["なる","なるちゃん"],"坂川陽香":["ひゆか","れみひゅー"],"髙橋彩音":["あやね","高橋彩音"],"徳永羚海":["れみ","れみい","れみひゅー"],"橋本陽菜":["はるぴょん","はるpyon","はる"],"千葉恵里":["えりい"],"黒須遥香":["はーちゃん"],"長友彩海":["あやみん"],"武藤小麟":["おりん","おりんちゃん"],"山内瑞葵":["ずっきー"],"山根涼羽":["ずんちゃん"],"太田有紀":["ゆきたん"],"佐藤綺星":["あいちゃん"],"橋本恵理子":["えりちゃん","ほてえり"],"畠山希美":["のんちゃん"],"平田侑希":["ゆき"],"布袋百椛":["ほてちゃん","ほてえり"],"正鋳真優":["まゆうちゃん"],"水島美結":["みずみん"],"山﨑空":["そらら","山崎空"],"秋山由奈":["ゆなちゃん"],"新井彩永":["さえちゃん"],"工藤華純":["かすみん"],"久保姫菜乃":["ちゃんひな"],"迫由芽実":["ゆめみん"],"成田香姫奈":["こひ","こひこ"],"八木愛月":["あづ","あづこ"],"山口結愛":["ゆいち","ゆい"],"伊藤百花":["いともも"],"奥本カイリ":["カイリ"],"川村結衣":["かわゆい"],"大賀彩姫":["さーちゃん"],"近藤沙樹":["こさき"],"丸山ひなた":["まるちゃん"],"髙橋舞桜":["まーたん","高橋舞桜"],"森川優":["ゆーゆ"],"渡邉葵心":["きこちゃん","渡辺葵心"],"長谷川百々花":["はせもも"],"大西ゆな":["ゆーちゃん"],"前田衣澄":["いず"],"山内利乃明":["りのあ"],"下尾みう":["みう","みうちゃん"],"永野芹佳":["せりか","せりちゃん"],"田中沙友利":["さゆりん"],"牧戸愛茉":["えまちゃん"]};
+const hira=s=>s.replace(/[ァ-ヶ]/g,c=>String.fromCharCode(c.charCodeAt(0)-96)).toLowerCase();
+const match=(m,k)=>{k=hira(k);return k===""||[m,RD[m]||"",...(NK[m]||[])].some(t=>hira(t).includes(k))};
+let sel=[],mon=Math.max(...Object.keys(MON).map(Number)),selDay=null,kw="",resSet=new Set();
+const $=id=>document.getElementById(id);
+const cn=x=>x[1]=="P"?"「柱の会限定 AKB48劇場開催 ファンイベント」":`「${T[x[1]].replace("ＲＥＳＥＴ","RESET")}」公演`;
+const nm=x=>`「${T[x[1]]}」${x[1]=="P"?"":"公演"}`;
+const cast=x=>x[4].split("・");
+const has=x=>x[1]&&sel.some(m=>cast(x).includes(m));
+const outs=x=>x[5]?sel.filter(m=>x[5][0].split("・").includes(m)):[];
+const helps=x=>x[5]?sel.filter(m=>x[5][1].split("・").includes(m)):[];
+const apps=x=>sel.filter(m=>cast(x).includes(m)&&!helps(x).includes(m));
+const st=x=>outs(x).length?"out":helps(x).length?"help":"";
+const dstr=d=>`${mon}月${d}日（${W[wd(d)]}）`;
+const tags=x=>{const m=sel.length>1;const nmz=a=>m?a.join("・")+" ":"";return (m?apps(x).filter(a=>1).map(a=>`<span class="pill m">${a}</span>`).join(""):"")+(outs(x).length?`<span class="pill o">${nmz(outs(x))}休演</span>`:"")+(helps(x).length?`<span class="pill h">${nmz(helps(x))}ヘルプ出演</span>`:"")};
+const pill=x=>{if(!x[3])return"";const b=/生誕祭/.test(x[3]),w=/女性限定/.test(x[3]);return `<span class="pill ${b?"b":w?"w":"n"}">${b?"🎂 ":""}${esc(x[3])}</span>`};
+
+function renderGens(){
+  const k=kw.replace(/\s|　/g,"");
+  const known=GEN.flatMap(g=>g[1].split("・"));
+  const G=[...GEN.map(g=>[g[0],g[1].split("・")]),["その他",members.filter(m=>!known.includes(m))]];
+  $("gens").innerHTML=G.map(([t,l])=>{const f=l.filter(m=>match(m,k));return f.length?`<div class="gr"><div class="gl">${t}</div><div class="ch">${f.map(m=>`<button class="chip${sel.includes(m)?" on":""}" data-m="${m}">${m}</button>`).join("")}</div></div>`:""}).join("")||`<p class="hint">該当するメンバーがいません</p>`;
+}
+const EN=["JANUARY","FEBRUARY","MARCH","APRIL","MAY","JUNE","JULY","AUGUST","SEPTEMBER","OCTOBER","NOVEMBER","DECEMBER"];
+function renderMonths(){
+  $("months2").innerHTML=[mon-1,mon,mon+1].filter(m=>m>=10&&m<=12).map(m=>`<button class="mn${m===mon?" on":""}" data-mo="${m}"${MON[m]?"":" disabled"}>${m===mon?"✓ ":""}${m}月${MON[m]?"":"（未定）"}</button>`).join("");
+  $("months").innerHTML=[mon-1,mon,mon+1].filter(m=>m>=10&&m<=12).map(m=>`<button class="mn${m===mon?" on":""}" data-mo="${m}"${MON[m]?"":" disabled"}>${m===mon?"✓ ":""}${m}月${MON[m]?"":"（未定）"}</button>`).join("");
+}
+function renderRes(){
+  $("res").closest("section").style.display=sel.length?"":"none";
+  const list=sel.length?MON[mon].filter(x=>x[1]&&(has(x)||outs(x).length)):[];
+  $("rt").innerHTML=sel.length?`${sel.length>3?sel.length+"人":sel.join("・")+"さん"}の出演公演<small>${list.filter(has).length}公演</small>${sel.length>1?`<button class="clr" id="clr">選択を解除</button>`:""}`:`推しの出演公演`;
+  $("res").innerHTML=!sel.length?"":!list.length?`<p class="hint">この月の出演予定の公演はありません。</p>`:`<div class="tb"><div class="th"><span>公演日</span><span>演目</span><span>開演</span><span></span></div>`+list.map((x,i)=>`<div class="tr${!apps(x).length&&!helps(x).length?" out":""}${resSet.has(i)?" on":""}" data-i="${i}"><span class="b">${dstr(x[0])}</span><span>${nm(x)}</span><span>${x[2]}</span><span class="pc">${pill(x)?`<div class="pr">${pill(x)}</div>`:""}${tags(x)?`<div class="pr">${tags(x)}</div>`:""}</span></div>${resSet.has(i)?`<div class="rowdet">${detHTML(x,true)}</div>`:""}`).join("")+`</div>`;
+}
+const isToday=d=>{const t=new Date();return t.getFullYear()==2026&&t.getMonth()+1==mon&&t.getDate()==d};
+function renderCal(){
+  $("ttl").innerHTML=`${mon}<small>月</small><span class="sl">／</span><span class="en">${EN[mon-1]}</span>`;
+  const data=MON[mon],first=new Date(2026,mon-1,1).getDay(),days=new Date(2026,mon,0).getDate();
+  let h=W.map(w=>`<div class="wh">${w}</div>`).join("")+`<div class="c e"></div>`.repeat(first);
+  for(let d=1;d<=days;d++){
+    const xs=data.filter(x=>x[0]==d),closed=xs.some(x=>!x[1]),hit=xs.some(has),isSel=d===selDay;
+    const badge="";
+    const body=closed?`<span class="bar" style="--c:#e4e6ea">休館日</span>`:xs.map(x=>x[2].split("／").map(t=>`<span class="bar" style="--c:${CL[x[1]]}"><span class="bn">${SH[x[1]]}${/生誕祭/.test(x[3])?"🎂":""}</span> <span class="bt">${t}</span></span>`).join("")).join("");
+    h+=`<button class="c${hit?" hit":""}${isSel?" sel":""}" data-d="${d}"><span class="n${isToday(d)?" today":""}">${String(d).padStart(2,"0")}</span>${badge}${body}</button>`;
+  }
+  $("cal").innerHTML=h;
+}
+const detHTML=(x,bare)=>{const ms=x[4].split("・");const day=x[0];return `<div class="dp2" style="border-left-color:${CL[x[1]]}">${bare?"":`<div class="d1">${mon}月${day}日（${W[wd(day)]}）<span class="d3">${x[2]}<small>開演</small></span></div><h3>${nm(x)}${pill(x)}</h3>`}<div class="d4">${ms.join("、")}</div>${x[5]?`<div class="cg" style="margin:8px 0 0;padding:10px 0 0;border:0;border-top:1px solid var(--bd)"><b>出演メンバー変更</b>${x[5][0]?`<p>出演なし：${x[5][0]}</p>`:""}<p>追加出演：${x[5][1]}</p></div>`:""}</div>`};
+function renderDet(){
+  const xs=selDay?MON[mon].filter(x=>x[0]==selDay&&x[1]):[];
+  $("det").innerHTML=xs.map(x=>detHTML(x)).join("");
+}
+function renderAll(){renderGens();renderMonths();renderRes();renderCal();renderDet()}
+$("kw").addEventListener("input",e=>{kw=e.target.value;renderGens()});
+$("gens").addEventListener("click",e=>{const b=e.target.closest("[data-m]");if(!b)return;const m=b.dataset.m;sel=sel.includes(m)?sel.filter(a=>a!==m):[...sel,m];resSet=new Set();renderAll()});
+const moClick=e=>{const b=e.target.closest("[data-mo]");if(!b||b.disabled)return;mon=+b.dataset.mo;selDay=null;resSet=new Set();renderAll()};
+$("months").addEventListener("click",moClick);$("months2").addEventListener("click",moClick);
+$("cal").addEventListener("click",e=>{const b=e.target.closest("[data-d]");if(!b)return;selDay=+b.dataset.d;renderCal();renderDet()});
+$("rt").addEventListener("click",e=>{if(e.target.closest("#clr")){sel=[];resSet=new Set();renderAll()}});
+$("res").addEventListener("click",e=>{const b=e.target.closest("[data-i]");if(!b)return;const i=+b.dataset.i;resSet.has(i)?resSet.delete(i):resSet.add(i);renderRes()});
+
+renderAll();
+</script>
+</body>
+</html>
