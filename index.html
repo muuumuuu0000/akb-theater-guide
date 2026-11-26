@@ -256,7 +256,7 @@ $("res").addEventListener("click",e=>{const b=e.target.closest("[data-i]");if(!b
 if(/\.pages\.dev$/.test(location.hostname)&&location.hostname!=="akb-theater-guide.pages.dev"){
   const b=document.createElement("div");
   b.textContent="🔧 プレビュー版（本番ではありません）";
-  b.style.cssText="position:fixed;top:0;left:0;right:0;z-index:9999;background:#e8590c;color:#fff;text-align:center;font:700 13px/1 sans-serif;padding:8px 4px";
+  b.style.cssText="position:fixed;top:0;left:0;right:0;z-index:9999;background:#1c7ed6;color:#fff;text-align:center;font:700 13px/1 sans-serif;padding:8px 4px";
   document.body.appendChild(b);document.body.style.paddingTop="30px";
 }
 fetch("data.json",{cache:"no-cache"}).then(r=>{if(!r.ok)throw new Error(r.status);return r.json()}).then(d=>{
